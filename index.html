@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Layanan Izin Luar Biasa - SI CENI</title>
+  <style>
+    /* Gaya Umum */
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #f4f7fb;
+      color: #333;
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    
+    header {
+      background-color: #003366;
+      color: white;
+      padding: 30px 0;
+      text-align: center;
+      border-bottom: 4px solid #f6c700;
+    }
+    header img {
+      width: 120px;
+      display: block;
+      margin: 0 auto;
+    }
+    header h1 {
+      font-size: 32px;
+      margin: 10px 0;
+    }
+    header h2 {
+      font-size: 18px;
+      margin: 5px 0;
+    }
+    
+    /* Navbar */
+    nav {
+      background-color: #003366;
+      padding: 10px 0;
+      text-align: center;
+    }
+    nav a {
+      color: white;
+      padding: 12px 20px;
+      text-decoration: none;
+      font-size: 18px;
+      margin: 0 15px;
+      display: inline-block;
+      border-radius: 5px;
+      transition: background-color 0.3s ease;
+    }
+    nav a:hover {
+      background-color: #f6c700;
+    }
+
+    /* Form */
+    .form-container {
+      background-color: #ffffff;
+      padding: 40px;
+      margin: 30px auto;
+      max-width: 800px;
+      border-radius: 8px;
+      box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    }
+    .form-container h2 {
+      text-align: center;
+      font-size: 26px;
+      margin-bottom: 20px;
+      color: #003366;
+    }
+
+    .input-group {
+      margin-bottom: 20px;
+    }
+    label {
+      font-size: 16px;
+      color: #333;
+      display: block;
+      margin-bottom: 5px;
+    }
+    input, select, textarea {
+      width: 100%;
+      padding: 12px;
+      font-size: 16px;
+      border: 1px solid #ddd;
+      border-radius: 8px;
+      margin-bottom: 15px;
+      box-sizing: border-box;
+    }
+    input[type="date"] {
+      padding: 10px;
+    }
+    button {
+      background-color: #003366;
+      color: white;
+      padding: 15px 30px;
+      font-size: 18px;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      width: 100%;
+      transition: background-color 0.3s ease;
+    }
+    button:hover {
+      background-color: #f6c700;
+    }
+
+    /* Pesan Sukses */
+    .success {
+      display: none;
+      background-color: #28a745;
+      color: white;
+      padding: 10px;
+      text-align: center;
+      margin-top: 20px;
+      border-radius: 8px;
+    }
+
+    /* Tombol Kembali */
+    .back-button {
+      display: inline-block;
+      background-color: #f6c700;
+      color: #003366;
+      padding: 12px 20px;
+      border-radius: 8px;
+      text-decoration: none;
+      font-weight: bold;
+      text-align: center;
+      margin-top: 30px;
+      transition: background-color 0.3s ease;
+    }
+    .back-button:hover {
+      background-color: #003366;
+      color: white;
+    }
+
+    /* Section Styling */
+    .section {
+      background-color: #debc4e;
+      padding: 20px;
+      margin: 20px auto;
+      border-radius: 12px;
+      width: 80%;
+      max-width: 900px;
+    }
+
+    .section h2 {
+      font-size: 24px;
+      text-align: center;
+    }
+
+    .section ul, .section ol {
+      margin-left: 20px;
+      line-height: 1.5; /* Menambahkan jarak antar baris */
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <img src="imipas.png" alt="Logo SI CENI">
+    <h2>KEMENTERIAN IMIGRASI DAN PEMASYARAKATAN</h2>
+    <h2>LAPAS KELAS IIA KOTABARU</h2>
+    <h1>SI CENI - LAYANAN IZIN LUAR BIASA</h1>
+  </header>
+
+  <!-- Menu Navigasi -->
+  <nav>
+    <a href="#persyaratan">Persyaratan</a>
+    <a href="#prosedur">Prosedur</a>
+    <a href="#formulir">Form Pengajuan</a>
+  </nav>
+
+  <!-- Persyaratan Section -->
+  <div class="section" id="persyaratan">
+    <h2>Persyaratan Permohonan Izin Luar Biasa</h2>
+    <ul>
+      <li><strong>Melayat:</strong>
+        <ul>
+          <li>Yang meninggal memiliki hubungan keluarga dengan narapidana (Ayah, Ibu, Anak, Suami, Istri, Adik/Kakak Kandung);</li>
+          <li>Adanya Surat Permohonan dan Jaminan dari keluarga dengan materai 10.000 dan diketahui oleh Lurah/Kepala Desa setempat yang ditujukan kepada Kalapas;</li>
+          <li>KTP dan Kartu Keluarga Penjamin;</li>
+          <li>Surat Keterangan Meninggal Dunia dari Rumah Sakit atau Lurah/Kepala Desa Setempat;</li>
+          <li>Surat Keterangan Dari Kelurahan Mengenai Hubungan Narapidana dengan Keluarga yang akan dilayat.</li>
+        </ul>
+      </li>
+      <li><strong>Memebesuk Sakit Keras:</strong>
+        <ul>
+          <li>Yang sakit keras memiliki hubungan keluarga dengan narapidana (Ayah, Ibu, Anak, Suami, Istri, Adik/Kakak Kandung);</li>
+          <li>Adanya Surat Permohonan dan Jaminan dari keluarga dengan materai 10.000 dan diketahui oleh Lurah/Kepala Desa setempat yang ditujukan kepada Kalapas;</li>
+          <li>KTP dan Kartu Keluarga Penjamin;</li>
+          <li>Surat Keterangan Sakit Keras dari Rumah Sakit;</li>
+          <li>Surat Keterangan Dari Kelurahan Mengenai Hubungan Narapidana dengan Keluarga yang akan dibesuk.</li>
+        </ul>
+      </li>
+      <li><strong>Menjadi Wali Nikah Anak Kandung:</strong>
+        <ul>
+          <li>Adanya Surat Permohonan dan Jaminan dari keluarga dengan materai 10.000 dan diketahui oleh Lurah/Kepala Desa setempat yang ditujukan kepada Kalapas;</li>
+          <li>KTP dan Kartu Keluarga Penjamin;</li>
+          <li>Surat Keterangan Menjadi Wali Nikah dari Lurah/Kepala Desa;</li>
+          <li>Foto Copy Lembar Model N1 s.d N4 dari KUA.</li>
+        </ul>
+      </li>
+      <li><strong>Membagi Warisan:</strong>
+        <ul>
+          <li>Adanya Surat Permohonan dan Jaminan dari keluarga dengan materai 10.000 dan diketahui oleh Lurah/Kepala Desa setempat yang ditujukan kepada Kalapas;</li>
+          <li>KTP dan Kartu Keluarga Penjamin;</li>
+          <li>Surat Keterangan akan berbagi waris dari Para Ahli Waris dengan diketahui oleh Lurah/Kepala Desa.</li>
+        </ul>
+      </li>
+    </ul>
+  </div>
+
+  <!-- Prosedur Section -->
+  <div class="section" id="prosedur">
+    <h2>Prosedur Pengajuan Izin Luar Biasa</h2>
+    <ol>
+      <li>Narapidana/keluarga/kuasa hukum mengajukan permohonan izin luar biasa dilengkapi dengan dokumen persyaratan;</li>
+      <li>Kepala Lapas/Rutan memberikan Izin Luar Biasa berdasarkan hasil penelitian lapangan dan rekomendasi sidang TPP;</li>
+      <li>Narapidana memperoleh Surat Izin dari Kepala Lapas/Rutan;</li>
+      <li>Narapidana dikawal oleh Petugas Pemasyarakatan dan Polisi.</li>
+    </ol>
+  </div>
+
+  <!-- Formulir Permohonan Section -->
+  <div class="section" id="formulir">
+    <h2>Form Permohonan Izin Luar Biasa</h2>
+    <p>Lengkapi data di bawah ini untuk mengajukan permohonan izin luar biasa.</p>
+  </div>
+
+  <!-- Formulir Permohonan -->
+  <div class="form-container">
+    <h2>Ajukan Permohonan Izin Luar Biasa</h2>
+    <form id="izinluarbiasaForm">
+      <div class="input-group">
+        <label for="nama">Nama Lengkap:</label>
+        <input type="text" id="nama" placeholder="Nama Lengkap" required />
+      </div>
+
+      <div class="input-group">
+        <label for="tempatTglLahir">Tempat, Tanggal Lahir:</label>
+        <input type="text" id="tempatTglLahir" placeholder="Tempat, Tanggal Lahir" required />
+      </div>
+
+      <div class="input-group">
+        <label for="agama">Agama:</label>
+        <input type="text" id="agama" placeholder="Agama" required />
+      </div>
+
+      <div class="input-group">
+        <label for="pekerjaan">Pekerjaan:</label>
+        <input type="text" id="pekerjaan" placeholder="Pekerjaan" required />
+      </div>
+
+      <div class="input-group">
+        <label for="alamat">Alamat:</label>
+        <input type="text" id="alamat" placeholder="Alamat Lengkap" required />
+      </div>
+
+      <div class="input-group">
+        <label for="noHandphone">Nomor Handphone:</label>
+        <input type="text" id="noHandphone" placeholder="Nomor Handphone" required />
+      </div>
+
+      <div class="input-group">
+        <label for="namaWBP">Nama Lengkap Warga Binaan:</label>
+        <input type="text" id="namaWBP" placeholder="Nama Lengkap Warga Binaan" required />
+      </div>
+
+      <div class="input-group">
+        <label for="perkara">Perkara / Pasal:</label>
+        <input type="text" id="perkara" placeholder="Perkara / Pasal" required />
+      </div>
+
+      <div class="input-group">
+        <label for="lamaPidana">Lama Pidana:</label>
+        <input type="text" id="lamaPidana" placeholder="Lama Pidana" required />
+      </div>
+
+      <div class="input-group">
+        <label for="hubunganPenjamin">Hubungan Penjamin Dengan WBP:</label>
+        <input type="text" id="hubunganPenjamin" placeholder="Hubungan Penjamin Dengan WBP" required />
+      </div>
+
+      <div class="input-group">
+        <label for="jenisIzin">Jenis Izin Luar Biasa:</label>
+        <select id="jenisIzin" required>
+          <option value="melayat">Melayat</option>
+          <option value="membesukSakitKeras">Membesuk Sakit Keras</option>
+          <option value="waliNikah">Wali Nikah</option>
+          <option value="membagiWarisan">Membagi Warisan</option>
+        </select>
+      </div>
+
+      <div class="input-group">
+        <label for="keterangan">Keterangan:</label>
+        <input type="text" id="keterangan" placeholder="Misal: Melayat ayah kandung meninggal dunia" required />
+      </div>
+
+      <div class="input-group">
+        <label for="alamatIzin">Alamat Izin Luar Biasa:</label>
+        <input type="text" id="alamatIzin" placeholder="Alamat Izin Luar Biasa" required />
+      </div>
+
+      <div class="input-group">
+        <label for="tanggalIzin">Tanggal Izin Luar Biasa:</label>
+        <input type="date" id="tanggalIzin" required />
+      </div>
+
+      <div class="input-group">
+        <label for="email">Alamat Email:</label>
+        <input type="email" id="email" placeholder="Alamat Email" required />
+      </div>
+
+      <button type="submit">Ajukan Permohonan</button>
+
+      <p class="success" id="successMsg">🎉 Permohonan berhasil dikirim!</p>
+    </form>
+  </div>
+
+  <div style="text-align: center;">
+    <a href="https://lapaskotabaru.github.io/siceni" class="back-button">⬅️ Kembali ke Halaman Utama</a>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+  <script>
+    window.onload = function () {
+      emailjs.init('avXPfnp_arbowzdkh');
+    };
+
+    document.getElementById('izinluarbiasaForm').addEventListener('submit', function (e) {
+      e.preventDefault();
+
+      const nama = document.getElementById('nama').value;
+      const tempat_tgl_lahir = document.getElementById('tempatTglLahir').value;
+      const agama = document.getElementById('agama').value;
+      const pekerjaan = document.getElementById('pekerjaan').value;
+      const alamat = document.getElementById('alamat').value;
+      const no_handphone = document.getElementById('noHandphone').value;
+      const nama_WBP = document.getElementById('namaWBP').value;
+      const perkara = document.getElementById('perkara').value;
+      const lama_pidana = document.getElementById('lamaPidana').value;
+      const hubungan_penjamin = document.getElementById('hubunganPenjamin').value;
+      const jenis_izin = document.getElementById('jenisIzin').value;
+      const keterangan = document.getElementById('keterangan').value;
+      const alamat_izin = document.getElementById('alamatIzin').value;
+      const tanggal_izin = document.getElementById('tanggalIzin').value;
+      const to_email = document.getElementById('email').value;
+      const tombol = this.querySelector('button');
+
+      // Format jenis izin untuk email
+      let jenisIzinFormatted = '';
+      if (jenis_izin === 'melayat') {
+        jenisIzinFormatted = 'Melayat';
+      } else if (jenis_izin === 'membesukSakitKeras') {
+        jenisIzinFormatted = 'Membesuk Sakit Keras';
+      } else if (jenis_izin === 'waliNikah') {
+        jenisIzinFormatted = 'Wali Nikah';
+      } else if (jenis_izin === 'membagiWarisan') {
+        jenisIzinFormatted = 'Membagi Warisan';
+      }
+
+      tombol.disabled = true;
+      tombol.innerText = 'Mengirim...';
+
+      emailjs.send('service_b62sy4r', 'template_460pimw', {
+        nama: nama,
+        tempat_tgl_lahir: tempat_tgl_lahir,
+        agama: agama,
+        pekerjaan: pekerjaan,
+        alamat: alamat,
+        no_handphone: no_handphone,
+        nama_WBP: nama_WBP,
+        perkara: perkara,
+        lama_pidana: lama_pidana,
+        hubungan_penjamin: hubungan_penjamin, // Mengirimkan hubungan penjamin
+        jenis_izin: jenisIzinFormatted, // Mengirimkan nilai yang telah diformat
+        keterangan: keterangan,
+        alamat_izin: alamat_izin,
+        tanggal_izin: tanggal_izin,
+        to_email: to_email
+      }).then(function (response) {
+        console.log('EmailJS success:', response);
+        document.getElementById('izinluarbiasaForm').reset();
+        document.getElementById('successMsg').style.display = 'block';
+        tombol.disabled = false;
+        tombol.innerText = 'Kirim Permohonan';
+      }, function (error) {
+        console.error('EmailJS error:', error);
+        alert('Gagal mengirim permohonan. Periksa koneksi atau konfigurasi EmailJS.');
+        tombol.disabled = false;
+        tombol.innerText = 'Ajukan Permohonan';
+      });
+    });
+  </script>
+</body>
+</html>
